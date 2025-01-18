@@ -224,3 +224,60 @@ ch33nchan-torch/
 ## Contributing
 
 Feel free to fork and submit pull requests! Let's make this as powerful as PyTorch! 🚀
+
+
+
+### N3xt steps : 
+Based on your current working directory, here’s a suggested progression for your Torch++ project and the Chess AI project:
+
+Next Steps for Torch++
+	1.	Files to Generate:
+	•	optimizer.cpp: Implement optimizers like SGD and Adam.
+	•	dataset.cpp: Provide utilities for handling datasets (e.g., loading, batching).
+	•	activation_functions.cpp: Centralize all activation functions like ReLU, sigmoid, and log-softmax.
+	•	dropout.cpp: Introduce dropout functionality for regularization.
+	•	convolution.cpp: Implement 1D and 2D convolution layers.
+	•	pooling.cpp: Add max and average pooling layers.
+	•	serialization.cpp: Handle saving and loading models.
+	•	torchplusplus.hpp: Centralized header to include all modules for ease of use.
+
+Overview of Chess AI Project
+
+Goal: Build a 2-player chess game where one player competes against an AI powered by a model trained with the Torch++ library.
+
+File List for Chess AI Project
+	•	main.cpp:
+Entry point for initializing the game, handling the main loop, and user input.
+	•	chess_board.cpp:
+Implements the board, including piece placement, movement, and visualization.
+	•	chess_board.hpp:
+Header file for the chess board structure and functionality.
+	•	chess_ai.cpp:
+Handles the AI logic, including move evaluation and decision-making.
+	•	chess_ai.hpp:
+Header file for AI-related functions.
+	•	game_rules.cpp:
+Implements the rules of chess (e.g., valid moves, checks, castling).
+	•	game_rules.hpp:
+Header file for chess rules.
+	•	minimax.cpp:
+Implements the Minimax algorithm with optional alpha-beta pruning for decision-making.
+	•	neural_network_agent.cpp:
+Uses the Torch++ library to load a trained model for AI-based moves.
+	•	evaluation_function.cpp:
+Defines heuristics or scoring functions for evaluating board states.
+	•	utils.cpp:
+Helper functions for tasks like move parsing, board setup, and printing.
+	•	torch_model_training.cpp:
+Prepares and trains the chess-playing AI model using Torch++.
+
+High-Level Flow
+	1.	Initialize Game: Load the board and set up players (human vs. AI or AI vs. AI).
+	2.	Input Handling: Accept user input for moves or let the AI determine its move.
+	3.	Rule Enforcement: Validate moves using game_rules.cpp.
+	4.	AI Decision-Making:
+	•	Use minimax.cpp for heuristic-based decision-making.
+	•	Optionally switch to neural_network_agent.cpp for model-driven moves.
+	5.	Game Visualization: Render the board and display updates (e.g., moves, captures, check).
+	6.	End Conditions: Check for game-over scenarios (checkmate, stalemate).
+
