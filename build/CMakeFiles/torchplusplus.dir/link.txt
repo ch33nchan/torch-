@@ -1,0 +1,2 @@
+/Library/Developer/CommandLineTools/usr/bin/ar qc libtorchplusplus.a CMakeFiles/torchplusplus.dir/src/nn/linear.cpp.o CMakeFiles/torchplusplus.dir/src/ops/basic_ops.cpp.o CMakeFiles/torchplusplus.dir/src/tensor.cpp.o
+/Library/Developer/CommandLineTools/usr/bin/ranlib libtorchplusplus.a
