@@ -185,6 +185,20 @@ basic_example/fast:
 	cd /Users/cheencheen/Desktop/torch++/build && $(MAKE) $(MAKESILENT) -f examples/CMakeFiles/basic_example.dir/build.make examples/CMakeFiles/basic_example.dir/build
 .PHONY : basic_example/fast
 
+# Convenience name for target.
+examples/CMakeFiles/nn_example.dir/rule:
+	cd /Users/cheencheen/Desktop/torch++/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/CMakeFiles/nn_example.dir/rule
+.PHONY : examples/CMakeFiles/nn_example.dir/rule
+
+# Convenience name for target.
+nn_example: examples/CMakeFiles/nn_example.dir/rule
+.PHONY : nn_example
+
+# fast build rule for target.
+nn_example/fast:
+	cd /Users/cheencheen/Desktop/torch++/build && $(MAKE) $(MAKESILENT) -f examples/CMakeFiles/nn_example.dir/build.make examples/CMakeFiles/nn_example.dir/build
+.PHONY : nn_example/fast
+
 basic_examples.o: basic_examples.cpp.o
 .PHONY : basic_examples.o
 
@@ -209,6 +223,30 @@ basic_examples.cpp.s:
 	cd /Users/cheencheen/Desktop/torch++/build && $(MAKE) $(MAKESILENT) -f examples/CMakeFiles/basic_example.dir/build.make examples/CMakeFiles/basic_example.dir/basic_examples.cpp.s
 .PHONY : basic_examples.cpp.s
 
+nn_example.o: nn_example.cpp.o
+.PHONY : nn_example.o
+
+# target to build an object file
+nn_example.cpp.o:
+	cd /Users/cheencheen/Desktop/torch++/build && $(MAKE) $(MAKESILENT) -f examples/CMakeFiles/nn_example.dir/build.make examples/CMakeFiles/nn_example.dir/nn_example.cpp.o
+.PHONY : nn_example.cpp.o
+
+nn_example.i: nn_example.cpp.i
+.PHONY : nn_example.i
+
+# target to preprocess a source file
+nn_example.cpp.i:
+	cd /Users/cheencheen/Desktop/torch++/build && $(MAKE) $(MAKESILENT) -f examples/CMakeFiles/nn_example.dir/build.make examples/CMakeFiles/nn_example.dir/nn_example.cpp.i
+.PHONY : nn_example.cpp.i
+
+nn_example.s: nn_example.cpp.s
+.PHONY : nn_example.s
+
+# target to generate assembly for a file
+nn_example.cpp.s:
+	cd /Users/cheencheen/Desktop/torch++/build && $(MAKE) $(MAKESILENT) -f examples/CMakeFiles/nn_example.dir/build.make examples/CMakeFiles/nn_example.dir/nn_example.cpp.s
+.PHONY : nn_example.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -223,9 +261,13 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... test"
 	@echo "... basic_example"
+	@echo "... nn_example"
 	@echo "... basic_examples.o"
 	@echo "... basic_examples.i"
 	@echo "... basic_examples.s"
+	@echo "... nn_example.o"
+	@echo "... nn_example.i"
+	@echo "... nn_example.s"
 .PHONY : help
 
 
