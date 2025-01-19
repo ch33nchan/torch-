@@ -281,3 +281,65 @@ High-Level Flow
 	5.	Game Visualization: Render the board and display updates (e.g., moves, captures, check).
 	6.	End Conditions: Check for game-over scenarios (checkmate, stalemate).
 
+torchplusplus/
+├── CMakeLists.txt                 # Main CMake configuration file
+├── README.md                      # Project documentation
+├── .gitignore                     # Git ignore file
+├── include/                       # Public header files
+│   └── torchplusplus/
+│       ├── tensor.hpp            # Tensor class declaration
+│       ├── autograd.hpp          # Autograd system declarations
+│       ├── nn/                   # Neural network components
+│       │   ├── linear.hpp        # Linear layer
+│       │   ├── conv2d.hpp        # Convolution layer
+│       │   ├── activation.hpp    # Activation functions
+│       │   └── loss.hpp          # Loss functions
+│       ├── ops/                  # Operations
+│       │   ├── basic_ops.hpp     # Basic arithmetic operations
+│       │   ├── matrix_ops.hpp    # Matrix operations
+│       │   └── reduction_ops.hpp # Reduction operations (sum, mean, etc.)
+│       └── utils/
+│           ├── ndarray.hpp       # N-dimensional array utilities
+│           └── exceptions.hpp    # Custom exceptions
+│
+├── src/                          # Implementation files
+│   ├── tensor.cpp               # Tensor class implementation
+│   ├── autograd.cpp             # Autograd system implementation
+│   ├── nn/
+│   │   ├── linear.cpp          # Linear layer implementation
+│   │   ├── conv2d.cpp          # Convolution layer implementation
+│   │   ├── activation.cpp      # Activation functions implementation
+│   │   └── loss.cpp            # Loss functions implementation
+│   └── ops/
+│       ├── basic_ops.cpp       # Basic operations implementation
+│       ├── matrix_ops.cpp      # Matrix operations implementation
+│       └── reduction_ops.cpp   # Reduction operations implementation
+│
+├── python/                      # Python bindings
+│   ├── CMakeLists.txt          # Python binding CMake file
+│   ├── setup.py                # Python package setup
+│   └── src/
+│       ├── binding.cpp         # Main pybind11 bindings
+│       └── torch_wrapper.cpp   # PyTorch compatibility layer
+│
+├── examples/                    # Example usage
+│   ├── basic_operations/
+│   │   └── tensor_ops.cpp
+│   └── neural_network/
+│       └── simple_nn.cpp
+│
+├── tests/                       # Unit tests
+│   ├── CMakeLists.txt          # Test CMake configuration
+│   ├── test_tensor.cpp         # Tensor tests
+│   ├── test_autograd.cpp       # Autograd tests
+│   ├── test_nn/               # Neural network tests
+│   │   ├── test_linear.cpp
+│   │   └── test_conv2d.cpp
+│   └── test_ops/              # Operation tests
+│       ├── test_basic_ops.cpp
+│       └── test_matrix_ops.cpp
+│
+└── docs/                       # Documentation
+    ├── api/                    # API documentation
+    ├── examples/              # Usage examples
+    └── design/               # Design documents

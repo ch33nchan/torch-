@@ -138,6 +138,7 @@ _deps/googletest-build/googletest/clean: _deps/googletest-build/googletest/CMake
 
 # Recursive "all" directory target.
 examples/all: examples/CMakeFiles/basic_example.dir/all
+examples/all: examples/CMakeFiles/nn_example.dir/all
 .PHONY : examples/all
 
 # Recursive "preinstall" directory target.
@@ -146,6 +147,7 @@ examples/preinstall:
 
 # Recursive "clean" directory target.
 examples/clean: examples/CMakeFiles/basic_example.dir/clean
+examples/clean: examples/CMakeFiles/nn_example.dir/clean
 .PHONY : examples/clean
 
 #=============================================================================
@@ -174,7 +176,7 @@ tests/clean: tests/CMakeFiles/test_ops.dir/clean
 CMakeFiles/torchplusplus.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/torchplusplus.dir/build.make CMakeFiles/torchplusplus.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/torchplusplus.dir/build.make CMakeFiles/torchplusplus.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/cheencheen/Desktop/torch++/build/CMakeFiles --progress-num=17,18,19,20 "Built target torchplusplus"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/cheencheen/Desktop/torch++/build/CMakeFiles --progress-num=19,20,21,22 "Built target torchplusplus"
 .PHONY : CMakeFiles/torchplusplus.dir/all
 
 # Build rule for subdir invocation for target.
@@ -307,7 +309,7 @@ tests/CMakeFiles/test_tensor.dir/all: _deps/googletest-build/googletest/CMakeFil
 tests/CMakeFiles/test_tensor.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_tensor.dir/build.make tests/CMakeFiles/test_tensor.dir/depend
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_tensor.dir/build.make tests/CMakeFiles/test_tensor.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/cheencheen/Desktop/torch++/build/CMakeFiles --progress-num=15,16 "Built target test_tensor"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/cheencheen/Desktop/torch++/build/CMakeFiles --progress-num=17,18 "Built target test_tensor"
 .PHONY : tests/CMakeFiles/test_tensor.dir/all
 
 # Build rule for subdir invocation for target.
@@ -335,7 +337,7 @@ tests/CMakeFiles/test_linear.dir/all: _deps/googletest-build/googletest/CMakeFil
 tests/CMakeFiles/test_linear.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_linear.dir/build.make tests/CMakeFiles/test_linear.dir/depend
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_linear.dir/build.make tests/CMakeFiles/test_linear.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/cheencheen/Desktop/torch++/build/CMakeFiles --progress-num=11,12 "Built target test_linear"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/cheencheen/Desktop/torch++/build/CMakeFiles --progress-num=13,14 "Built target test_linear"
 .PHONY : tests/CMakeFiles/test_linear.dir/all
 
 # Build rule for subdir invocation for target.
@@ -363,7 +365,7 @@ tests/CMakeFiles/test_ops.dir/all: _deps/googletest-build/googletest/CMakeFiles/
 tests/CMakeFiles/test_ops.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_ops.dir/build.make tests/CMakeFiles/test_ops.dir/depend
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_ops.dir/build.make tests/CMakeFiles/test_ops.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/cheencheen/Desktop/torch++/build/CMakeFiles --progress-num=13,14 "Built target test_ops"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/cheencheen/Desktop/torch++/build/CMakeFiles --progress-num=15,16 "Built target test_ops"
 .PHONY : tests/CMakeFiles/test_ops.dir/all
 
 # Build rule for subdir invocation for target.
@@ -407,6 +409,32 @@ basic_example: examples/CMakeFiles/basic_example.dir/rule
 examples/CMakeFiles/basic_example.dir/clean:
 	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/basic_example.dir/build.make examples/CMakeFiles/basic_example.dir/clean
 .PHONY : examples/CMakeFiles/basic_example.dir/clean
+
+#=============================================================================
+# Target rules for target examples/CMakeFiles/nn_example.dir
+
+# All Build rule for target.
+examples/CMakeFiles/nn_example.dir/all: CMakeFiles/torchplusplus.dir/all
+	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/nn_example.dir/build.make examples/CMakeFiles/nn_example.dir/depend
+	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/nn_example.dir/build.make examples/CMakeFiles/nn_example.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/cheencheen/Desktop/torch++/build/CMakeFiles --progress-num=11,12 "Built target nn_example"
+.PHONY : examples/CMakeFiles/nn_example.dir/all
+
+# Build rule for subdir invocation for target.
+examples/CMakeFiles/nn_example.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/cheencheen/Desktop/torch++/build/CMakeFiles 6
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/CMakeFiles/nn_example.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/cheencheen/Desktop/torch++/build/CMakeFiles 0
+.PHONY : examples/CMakeFiles/nn_example.dir/rule
+
+# Convenience name for target.
+nn_example: examples/CMakeFiles/nn_example.dir/rule
+.PHONY : nn_example
+
+# clean rule for target.
+examples/CMakeFiles/nn_example.dir/clean:
+	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/nn_example.dir/build.make examples/CMakeFiles/nn_example.dir/clean
+.PHONY : examples/CMakeFiles/nn_example.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

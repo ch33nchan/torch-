@@ -42,6 +42,7 @@
 /Users/cheencheen/Desktop/torch++/build/tests/CMakeFiles/install/local.dir
 /Users/cheencheen/Desktop/torch++/build/tests/CMakeFiles/install/strip.dir
 /Users/cheencheen/Desktop/torch++/build/examples/CMakeFiles/basic_example.dir
+/Users/cheencheen/Desktop/torch++/build/examples/CMakeFiles/nn_example.dir
 /Users/cheencheen/Desktop/torch++/build/examples/CMakeFiles/test.dir
 /Users/cheencheen/Desktop/torch++/build/examples/CMakeFiles/edit_cache.dir
 /Users/cheencheen/Desktop/torch++/build/examples/CMakeFiles/rebuild_cache.dir

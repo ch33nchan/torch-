@@ -288,6 +288,19 @@ basic_example/fast:
 	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/basic_example.dir/build.make examples/CMakeFiles/basic_example.dir/build
 .PHONY : basic_example/fast
 
+#=============================================================================
+# Target rules for targets named nn_example
+
+# Build rule for target.
+nn_example: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 nn_example
+.PHONY : nn_example
+
+# fast build rule for target.
+nn_example/fast:
+	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/nn_example.dir/build.make examples/CMakeFiles/nn_example.dir/build
+.PHONY : nn_example/fast
+
 src/nn/linear.o: src/nn/linear.cpp.o
 .PHONY : src/nn/linear.o
 
@@ -378,6 +391,7 @@ help:
 	@echo "... gmock_main"
 	@echo "... gtest"
 	@echo "... gtest_main"
+	@echo "... nn_example"
 	@echo "... test_linear"
 	@echo "... test_ops"
 	@echo "... test_tensor"
