@@ -227,6 +227,20 @@ test_ops/fast:
 	cd /Users/cheencheen/Desktop/torch++/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_ops.dir/build.make tests/CMakeFiles/test_ops.dir/build
 .PHONY : test_ops/fast
 
+# Convenience name for target.
+tests/CMakeFiles/test_chess.dir/rule:
+	cd /Users/cheencheen/Desktop/torch++/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_chess.dir/rule
+.PHONY : tests/CMakeFiles/test_chess.dir/rule
+
+# Convenience name for target.
+test_chess: tests/CMakeFiles/test_chess.dir/rule
+.PHONY : test_chess
+
+# fast build rule for target.
+test_chess/fast:
+	cd /Users/cheencheen/Desktop/torch++/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_chess.dir/build.make tests/CMakeFiles/test_chess.dir/build
+.PHONY : test_chess/fast
+
 test_basic.o: test_basic.cpp.o
 .PHONY : test_basic.o
 
@@ -250,6 +264,30 @@ test_basic.s: test_basic.cpp.s
 test_basic.cpp.s:
 	cd /Users/cheencheen/Desktop/torch++/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_basic.dir/build.make tests/CMakeFiles/test_basic.dir/test_basic.cpp.s
 .PHONY : test_basic.cpp.s
+
+test_chess.o: test_chess.cpp.o
+.PHONY : test_chess.o
+
+# target to build an object file
+test_chess.cpp.o:
+	cd /Users/cheencheen/Desktop/torch++/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_chess.dir/build.make tests/CMakeFiles/test_chess.dir/test_chess.cpp.o
+.PHONY : test_chess.cpp.o
+
+test_chess.i: test_chess.cpp.i
+.PHONY : test_chess.i
+
+# target to preprocess a source file
+test_chess.cpp.i:
+	cd /Users/cheencheen/Desktop/torch++/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_chess.dir/build.make tests/CMakeFiles/test_chess.dir/test_chess.cpp.i
+.PHONY : test_chess.cpp.i
+
+test_chess.s: test_chess.cpp.s
+.PHONY : test_chess.s
+
+# target to generate assembly for a file
+test_chess.cpp.s:
+	cd /Users/cheencheen/Desktop/torch++/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_chess.dir/build.make tests/CMakeFiles/test_chess.dir/test_chess.cpp.s
+.PHONY : test_chess.cpp.s
 
 test_linear.o: test_linear.cpp.o
 .PHONY : test_linear.o
@@ -337,12 +375,16 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... test"
 	@echo "... test_basic"
+	@echo "... test_chess"
 	@echo "... test_linear"
 	@echo "... test_ops"
 	@echo "... test_tensor"
 	@echo "... test_basic.o"
 	@echo "... test_basic.i"
 	@echo "... test_basic.s"
+	@echo "... test_chess.o"
+	@echo "... test_chess.i"
+	@echo "... test_chess.s"
 	@echo "... test_linear.o"
 	@echo "... test_linear.i"
 	@echo "... test_linear.s"

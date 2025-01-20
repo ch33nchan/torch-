@@ -8,3 +8,4 @@ include("/Users/cheencheen/Desktop/torch++/build/tests/test_basic[1]_include.cma
 include("/Users/cheencheen/Desktop/torch++/build/tests/test_tensor[1]_include.cmake")
 include("/Users/cheencheen/Desktop/torch++/build/tests/test_linear[1]_include.cmake")
 include("/Users/cheencheen/Desktop/torch++/build/tests/test_ops[1]_include.cmake")
+include("/Users/cheencheen/Desktop/torch++/build/tests/test_chess[1]_include.cmake")

@@ -182,4 +182,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "tests/CMakeFiles/test_tensor.dir/DependInfo.cmake"
   "tests/CMakeFiles/test_linear.dir/DependInfo.cmake"
   "tests/CMakeFiles/test_ops.dir/DependInfo.cmake"
+  "tests/CMakeFiles/test_chess.dir/DependInfo.cmake"
   )

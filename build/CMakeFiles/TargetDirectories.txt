@@ -44,6 +44,7 @@
 /Users/cheencheen/Desktop/torch++/build/tests/CMakeFiles/test_tensor.dir
 /Users/cheencheen/Desktop/torch++/build/tests/CMakeFiles/test_linear.dir
 /Users/cheencheen/Desktop/torch++/build/tests/CMakeFiles/test_ops.dir
+/Users/cheencheen/Desktop/torch++/build/tests/CMakeFiles/test_chess.dir
 /Users/cheencheen/Desktop/torch++/build/tests/CMakeFiles/test.dir
 /Users/cheencheen/Desktop/torch++/build/tests/CMakeFiles/edit_cache.dir
 /Users/cheencheen/Desktop/torch++/build/tests/CMakeFiles/rebuild_cache.dir

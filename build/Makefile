@@ -314,6 +314,19 @@ test_ops/fast:
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_ops.dir/build.make tests/CMakeFiles/test_ops.dir/build
 .PHONY : test_ops/fast
 
+#=============================================================================
+# Target rules for targets named test_chess
+
+# Build rule for target.
+test_chess: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_chess
+.PHONY : test_chess
+
+# fast build rule for target.
+test_chess/fast:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_chess.dir/build.make tests/CMakeFiles/test_chess.dir/build
+.PHONY : test_chess/fast
+
 src/chess/board.o: src/chess/board.cpp.o
 .PHONY : src/chess/board.o
 
@@ -430,6 +443,7 @@ help:
 	@echo "... gtest"
 	@echo "... gtest_main"
 	@echo "... test_basic"
+	@echo "... test_chess"
 	@echo "... test_linear"
 	@echo "... test_ops"
 	@echo "... test_tensor"
