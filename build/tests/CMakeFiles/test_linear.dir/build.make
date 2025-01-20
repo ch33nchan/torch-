@@ -93,9 +93,6 @@ test_linear_EXTERNAL_OBJECTS =
 tests/test_linear: tests/CMakeFiles/test_linear.dir/test_linear.cpp.o
 tests/test_linear: tests/CMakeFiles/test_linear.dir/build.make
 tests/test_linear: libtorchplusplus.a
-tests/test_linear: lib/libgtest.a
-tests/test_linear: lib/libgtest_main.a
-tests/test_linear: lib/libgtest.a
 tests/test_linear: tests/CMakeFiles/test_linear.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/cheencheen/Desktop/torch++/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable test_linear"
 	cd /Users/cheencheen/Desktop/torch++/build/tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test_linear.dir/link.txt --verbose=$(VERBOSE)

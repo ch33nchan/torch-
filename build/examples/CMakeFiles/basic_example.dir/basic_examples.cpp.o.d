@@ -955,8 +955,4 @@ examples/CMakeFiles/basic_example.dir/basic_examples.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk/usr/include/c++/v1/__format/formatter_tuple.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk/usr/include/c++/v1/print \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk/usr/include/unistd.h \
-  /Users/cheencheen/Desktop/torch++/include/torchplusplus/tensor.hpp \
-  /Users/cheencheen/Desktop/torch++/include/torchplusplus/nn/linear.hpp \
-  /Users/cheencheen/Desktop/torch++/include/torchplusplus/nn/../tensor.hpp \
-  /Users/cheencheen/Desktop/torch++/include/torchplusplus/ops/basic_ops.hpp \
-  /Users/cheencheen/Desktop/torch++/include/torchplusplus/ops/../tensor.hpp
+  /Users/cheencheen/Desktop/torch++/include/torchplusplus/tensor.hpp

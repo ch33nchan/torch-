@@ -957,14 +957,8 @@ examples/CMakeFiles/basic_example.dir/basic_examples.cpp.o: /Users/cheencheen/De
   /Library/Developer/CommandLineTools/usr/lib/clang/16/include/stdarg.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/16/include/stddef.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/16/include/stdint.h \
-  /Users/cheencheen/Desktop/torch++/include/torchplusplus/tensor.hpp \
-  /Users/cheencheen/Desktop/torch++/include/torchplusplus/nn/linear.hpp \
-  /Users/cheencheen/Desktop/torch++/include/torchplusplus/tensor.hpp \
-  /Users/cheencheen/Desktop/torch++/include/torchplusplus/ops/basic_ops.hpp \
   /Users/cheencheen/Desktop/torch++/include/torchplusplus/tensor.hpp
 
-
-/Users/cheencheen/Desktop/torch++/include/torchplusplus/nn/linear.hpp:
 
 /Library/Developer/CommandLineTools/usr/lib/clang/16/include/stddef.h:
 
@@ -1301,8 +1295,6 @@ examples/CMakeFiles/basic_example.dir/basic_examples.cpp.o: /Users/cheencheen/De
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk/usr/include/c++/v1/__utility/unreachable.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk/usr/include/c++/v1/__type_traits/rank.h:
-
-/Users/cheencheen/Desktop/torch++/include/torchplusplus/ops/basic_ops.hpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk/usr/include/c++/v1/errno.h:
 

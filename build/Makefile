@@ -185,56 +185,43 @@ torchplusplus/fast:
 .PHONY : torchplusplus/fast
 
 #=============================================================================
-# Target rules for targets named gmock
+# Target rules for targets named basic_example
 
 # Build rule for target.
-gmock: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gmock
-.PHONY : gmock
+basic_example: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 basic_example
+.PHONY : basic_example
 
 # fast build rule for target.
-gmock/fast:
-	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/build.make _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/build
-.PHONY : gmock/fast
+basic_example/fast:
+	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/basic_example.dir/build.make examples/CMakeFiles/basic_example.dir/build
+.PHONY : basic_example/fast
 
 #=============================================================================
-# Target rules for targets named gmock_main
+# Target rules for targets named basic_chess
 
 # Build rule for target.
-gmock_main: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gmock_main
-.PHONY : gmock_main
+basic_chess: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 basic_chess
+.PHONY : basic_chess
 
 # fast build rule for target.
-gmock_main/fast:
-	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/build.make _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/build
-.PHONY : gmock_main/fast
+basic_chess/fast:
+	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/basic_chess.dir/build.make examples/CMakeFiles/basic_chess.dir/build
+.PHONY : basic_chess/fast
 
 #=============================================================================
-# Target rules for targets named gtest
+# Target rules for targets named test_basic
 
 # Build rule for target.
-gtest: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gtest
-.PHONY : gtest
+test_basic: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_basic
+.PHONY : test_basic
 
 # fast build rule for target.
-gtest/fast:
-	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googletest/CMakeFiles/gtest.dir/build.make _deps/googletest-build/googletest/CMakeFiles/gtest.dir/build
-.PHONY : gtest/fast
-
-#=============================================================================
-# Target rules for targets named gtest_main
-
-# Build rule for target.
-gtest_main: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gtest_main
-.PHONY : gtest_main
-
-# fast build rule for target.
-gtest_main/fast:
-	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build.make _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build
-.PHONY : gtest_main/fast
+test_basic/fast:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_basic.dir/build.make tests/CMakeFiles/test_basic.dir/build
+.PHONY : test_basic/fast
 
 #=============================================================================
 # Target rules for targets named test_tensor
@@ -275,31 +262,29 @@ test_ops/fast:
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_ops.dir/build.make tests/CMakeFiles/test_ops.dir/build
 .PHONY : test_ops/fast
 
-#=============================================================================
-# Target rules for targets named basic_example
+src/chess/board.o: src/chess/board.cpp.o
+.PHONY : src/chess/board.o
 
-# Build rule for target.
-basic_example: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 basic_example
-.PHONY : basic_example
+# target to build an object file
+src/chess/board.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/torchplusplus.dir/build.make CMakeFiles/torchplusplus.dir/src/chess/board.cpp.o
+.PHONY : src/chess/board.cpp.o
 
-# fast build rule for target.
-basic_example/fast:
-	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/basic_example.dir/build.make examples/CMakeFiles/basic_example.dir/build
-.PHONY : basic_example/fast
+src/chess/board.i: src/chess/board.cpp.i
+.PHONY : src/chess/board.i
 
-#=============================================================================
-# Target rules for targets named nn_example
+# target to preprocess a source file
+src/chess/board.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/torchplusplus.dir/build.make CMakeFiles/torchplusplus.dir/src/chess/board.cpp.i
+.PHONY : src/chess/board.cpp.i
 
-# Build rule for target.
-nn_example: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 nn_example
-.PHONY : nn_example
+src/chess/board.s: src/chess/board.cpp.s
+.PHONY : src/chess/board.s
 
-# fast build rule for target.
-nn_example/fast:
-	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/nn_example.dir/build.make examples/CMakeFiles/nn_example.dir/build
-.PHONY : nn_example/fast
+# target to generate assembly for a file
+src/chess/board.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/torchplusplus.dir/build.make CMakeFiles/torchplusplus.dir/src/chess/board.cpp.s
+.PHONY : src/chess/board.cpp.s
 
 src/nn/linear.o: src/nn/linear.cpp.o
 .PHONY : src/nn/linear.o
@@ -386,16 +371,16 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... test"
+	@echo "... basic_chess"
 	@echo "... basic_example"
-	@echo "... gmock"
-	@echo "... gmock_main"
-	@echo "... gtest"
-	@echo "... gtest_main"
-	@echo "... nn_example"
+	@echo "... test_basic"
 	@echo "... test_linear"
 	@echo "... test_ops"
 	@echo "... test_tensor"
 	@echo "... torchplusplus"
+	@echo "... src/chess/board.o"
+	@echo "... src/chess/board.i"
+	@echo "... src/chess/board.s"
 	@echo "... src/nn/linear.o"
 	@echo "... src/nn/linear.i"
 	@echo "... src/nn/linear.s"

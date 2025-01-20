@@ -186,18 +186,18 @@ basic_example/fast:
 .PHONY : basic_example/fast
 
 # Convenience name for target.
-examples/CMakeFiles/nn_example.dir/rule:
-	cd /Users/cheencheen/Desktop/torch++/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/CMakeFiles/nn_example.dir/rule
-.PHONY : examples/CMakeFiles/nn_example.dir/rule
+examples/CMakeFiles/basic_chess.dir/rule:
+	cd /Users/cheencheen/Desktop/torch++/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/CMakeFiles/basic_chess.dir/rule
+.PHONY : examples/CMakeFiles/basic_chess.dir/rule
 
 # Convenience name for target.
-nn_example: examples/CMakeFiles/nn_example.dir/rule
-.PHONY : nn_example
+basic_chess: examples/CMakeFiles/basic_chess.dir/rule
+.PHONY : basic_chess
 
 # fast build rule for target.
-nn_example/fast:
-	cd /Users/cheencheen/Desktop/torch++/build && $(MAKE) $(MAKESILENT) -f examples/CMakeFiles/nn_example.dir/build.make examples/CMakeFiles/nn_example.dir/build
-.PHONY : nn_example/fast
+basic_chess/fast:
+	cd /Users/cheencheen/Desktop/torch++/build && $(MAKE) $(MAKESILENT) -f examples/CMakeFiles/basic_chess.dir/build.make examples/CMakeFiles/basic_chess.dir/build
+.PHONY : basic_chess/fast
 
 basic_examples.o: basic_examples.cpp.o
 .PHONY : basic_examples.o
@@ -223,29 +223,29 @@ basic_examples.cpp.s:
 	cd /Users/cheencheen/Desktop/torch++/build && $(MAKE) $(MAKESILENT) -f examples/CMakeFiles/basic_example.dir/build.make examples/CMakeFiles/basic_example.dir/basic_examples.cpp.s
 .PHONY : basic_examples.cpp.s
 
-nn_example.o: nn_example.cpp.o
-.PHONY : nn_example.o
+chess/basic_chess.o: chess/basic_chess.cpp.o
+.PHONY : chess/basic_chess.o
 
 # target to build an object file
-nn_example.cpp.o:
-	cd /Users/cheencheen/Desktop/torch++/build && $(MAKE) $(MAKESILENT) -f examples/CMakeFiles/nn_example.dir/build.make examples/CMakeFiles/nn_example.dir/nn_example.cpp.o
-.PHONY : nn_example.cpp.o
+chess/basic_chess.cpp.o:
+	cd /Users/cheencheen/Desktop/torch++/build && $(MAKE) $(MAKESILENT) -f examples/CMakeFiles/basic_chess.dir/build.make examples/CMakeFiles/basic_chess.dir/chess/basic_chess.cpp.o
+.PHONY : chess/basic_chess.cpp.o
 
-nn_example.i: nn_example.cpp.i
-.PHONY : nn_example.i
+chess/basic_chess.i: chess/basic_chess.cpp.i
+.PHONY : chess/basic_chess.i
 
 # target to preprocess a source file
-nn_example.cpp.i:
-	cd /Users/cheencheen/Desktop/torch++/build && $(MAKE) $(MAKESILENT) -f examples/CMakeFiles/nn_example.dir/build.make examples/CMakeFiles/nn_example.dir/nn_example.cpp.i
-.PHONY : nn_example.cpp.i
+chess/basic_chess.cpp.i:
+	cd /Users/cheencheen/Desktop/torch++/build && $(MAKE) $(MAKESILENT) -f examples/CMakeFiles/basic_chess.dir/build.make examples/CMakeFiles/basic_chess.dir/chess/basic_chess.cpp.i
+.PHONY : chess/basic_chess.cpp.i
 
-nn_example.s: nn_example.cpp.s
-.PHONY : nn_example.s
+chess/basic_chess.s: chess/basic_chess.cpp.s
+.PHONY : chess/basic_chess.s
 
 # target to generate assembly for a file
-nn_example.cpp.s:
-	cd /Users/cheencheen/Desktop/torch++/build && $(MAKE) $(MAKESILENT) -f examples/CMakeFiles/nn_example.dir/build.make examples/CMakeFiles/nn_example.dir/nn_example.cpp.s
-.PHONY : nn_example.cpp.s
+chess/basic_chess.cpp.s:
+	cd /Users/cheencheen/Desktop/torch++/build && $(MAKE) $(MAKESILENT) -f examples/CMakeFiles/basic_chess.dir/build.make examples/CMakeFiles/basic_chess.dir/chess/basic_chess.cpp.s
+.PHONY : chess/basic_chess.cpp.s
 
 # Help Target
 help:
@@ -260,14 +260,14 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... test"
+	@echo "... basic_chess"
 	@echo "... basic_example"
-	@echo "... nn_example"
 	@echo "... basic_examples.o"
 	@echo "... basic_examples.i"
 	@echo "... basic_examples.s"
-	@echo "... nn_example.o"
-	@echo "... nn_example.i"
-	@echo "... nn_example.s"
+	@echo "... chess/basic_chess.o"
+	@echo "... chess/basic_chess.i"
+	@echo "... chess/basic_chess.s"
 .PHONY : help
 
 

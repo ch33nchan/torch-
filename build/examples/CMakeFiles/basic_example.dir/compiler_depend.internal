@@ -959,8 +959,4 @@ examples/CMakeFiles/basic_example.dir/basic_examples.cpp.o
  /Library/Developer/CommandLineTools/usr/lib/clang/16/include/stddef.h
  /Library/Developer/CommandLineTools/usr/lib/clang/16/include/stdint.h
  /Users/cheencheen/Desktop/torch++/include/torchplusplus/tensor.hpp
- /Users/cheencheen/Desktop/torch++/include/torchplusplus/nn/linear.hpp
- /Users/cheencheen/Desktop/torch++/include/torchplusplus/tensor.hpp
- /Users/cheencheen/Desktop/torch++/include/torchplusplus/ops/basic_ops.hpp
- /Users/cheencheen/Desktop/torch++/include/torchplusplus/tensor.hpp
 

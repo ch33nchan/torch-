@@ -93,9 +93,6 @@ test_ops_EXTERNAL_OBJECTS =
 tests/test_ops: tests/CMakeFiles/test_ops.dir/test_ops.cpp.o
 tests/test_ops: tests/CMakeFiles/test_ops.dir/build.make
 tests/test_ops: libtorchplusplus.a
-tests/test_ops: lib/libgtest.a
-tests/test_ops: lib/libgtest_main.a
-tests/test_ops: lib/libgtest.a
 tests/test_ops: tests/CMakeFiles/test_ops.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/cheencheen/Desktop/torch++/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable test_ops"
 	cd /Users/cheencheen/Desktop/torch++/build/tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test_ops.dir/link.txt --verbose=$(VERBOSE)

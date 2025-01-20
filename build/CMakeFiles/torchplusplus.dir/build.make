@@ -69,10 +69,24 @@ include CMakeFiles/torchplusplus.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/torchplusplus.dir/flags.make
 
+CMakeFiles/torchplusplus.dir/src/chess/board.cpp.o: CMakeFiles/torchplusplus.dir/flags.make
+CMakeFiles/torchplusplus.dir/src/chess/board.cpp.o: /Users/cheencheen/Desktop/torch++/src/chess/board.cpp
+CMakeFiles/torchplusplus.dir/src/chess/board.cpp.o: CMakeFiles/torchplusplus.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/cheencheen/Desktop/torch++/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/torchplusplus.dir/src/chess/board.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/torchplusplus.dir/src/chess/board.cpp.o -MF CMakeFiles/torchplusplus.dir/src/chess/board.cpp.o.d -o CMakeFiles/torchplusplus.dir/src/chess/board.cpp.o -c /Users/cheencheen/Desktop/torch++/src/chess/board.cpp
+
+CMakeFiles/torchplusplus.dir/src/chess/board.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/torchplusplus.dir/src/chess/board.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/cheencheen/Desktop/torch++/src/chess/board.cpp > CMakeFiles/torchplusplus.dir/src/chess/board.cpp.i
+
+CMakeFiles/torchplusplus.dir/src/chess/board.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/torchplusplus.dir/src/chess/board.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/cheencheen/Desktop/torch++/src/chess/board.cpp -o CMakeFiles/torchplusplus.dir/src/chess/board.cpp.s
+
 CMakeFiles/torchplusplus.dir/src/nn/linear.cpp.o: CMakeFiles/torchplusplus.dir/flags.make
 CMakeFiles/torchplusplus.dir/src/nn/linear.cpp.o: /Users/cheencheen/Desktop/torch++/src/nn/linear.cpp
 CMakeFiles/torchplusplus.dir/src/nn/linear.cpp.o: CMakeFiles/torchplusplus.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/cheencheen/Desktop/torch++/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/torchplusplus.dir/src/nn/linear.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/cheencheen/Desktop/torch++/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/torchplusplus.dir/src/nn/linear.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/torchplusplus.dir/src/nn/linear.cpp.o -MF CMakeFiles/torchplusplus.dir/src/nn/linear.cpp.o.d -o CMakeFiles/torchplusplus.dir/src/nn/linear.cpp.o -c /Users/cheencheen/Desktop/torch++/src/nn/linear.cpp
 
 CMakeFiles/torchplusplus.dir/src/nn/linear.cpp.i: cmake_force
@@ -86,7 +100,7 @@ CMakeFiles/torchplusplus.dir/src/nn/linear.cpp.s: cmake_force
 CMakeFiles/torchplusplus.dir/src/ops/basic_ops.cpp.o: CMakeFiles/torchplusplus.dir/flags.make
 CMakeFiles/torchplusplus.dir/src/ops/basic_ops.cpp.o: /Users/cheencheen/Desktop/torch++/src/ops/basic_ops.cpp
 CMakeFiles/torchplusplus.dir/src/ops/basic_ops.cpp.o: CMakeFiles/torchplusplus.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/cheencheen/Desktop/torch++/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/torchplusplus.dir/src/ops/basic_ops.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/cheencheen/Desktop/torch++/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/torchplusplus.dir/src/ops/basic_ops.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/torchplusplus.dir/src/ops/basic_ops.cpp.o -MF CMakeFiles/torchplusplus.dir/src/ops/basic_ops.cpp.o.d -o CMakeFiles/torchplusplus.dir/src/ops/basic_ops.cpp.o -c /Users/cheencheen/Desktop/torch++/src/ops/basic_ops.cpp
 
 CMakeFiles/torchplusplus.dir/src/ops/basic_ops.cpp.i: cmake_force
@@ -100,7 +114,7 @@ CMakeFiles/torchplusplus.dir/src/ops/basic_ops.cpp.s: cmake_force
 CMakeFiles/torchplusplus.dir/src/tensor.cpp.o: CMakeFiles/torchplusplus.dir/flags.make
 CMakeFiles/torchplusplus.dir/src/tensor.cpp.o: /Users/cheencheen/Desktop/torch++/src/tensor.cpp
 CMakeFiles/torchplusplus.dir/src/tensor.cpp.o: CMakeFiles/torchplusplus.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/cheencheen/Desktop/torch++/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/torchplusplus.dir/src/tensor.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/cheencheen/Desktop/torch++/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/torchplusplus.dir/src/tensor.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/torchplusplus.dir/src/tensor.cpp.o -MF CMakeFiles/torchplusplus.dir/src/tensor.cpp.o.d -o CMakeFiles/torchplusplus.dir/src/tensor.cpp.o -c /Users/cheencheen/Desktop/torch++/src/tensor.cpp
 
 CMakeFiles/torchplusplus.dir/src/tensor.cpp.i: cmake_force
@@ -113,6 +127,7 @@ CMakeFiles/torchplusplus.dir/src/tensor.cpp.s: cmake_force
 
 # Object files for target torchplusplus
 torchplusplus_OBJECTS = \
+"CMakeFiles/torchplusplus.dir/src/chess/board.cpp.o" \
 "CMakeFiles/torchplusplus.dir/src/nn/linear.cpp.o" \
 "CMakeFiles/torchplusplus.dir/src/ops/basic_ops.cpp.o" \
 "CMakeFiles/torchplusplus.dir/src/tensor.cpp.o"
@@ -120,12 +135,13 @@ torchplusplus_OBJECTS = \
 # External object files for target torchplusplus
 torchplusplus_EXTERNAL_OBJECTS =
 
+libtorchplusplus.a: CMakeFiles/torchplusplus.dir/src/chess/board.cpp.o
 libtorchplusplus.a: CMakeFiles/torchplusplus.dir/src/nn/linear.cpp.o
 libtorchplusplus.a: CMakeFiles/torchplusplus.dir/src/ops/basic_ops.cpp.o
 libtorchplusplus.a: CMakeFiles/torchplusplus.dir/src/tensor.cpp.o
 libtorchplusplus.a: CMakeFiles/torchplusplus.dir/build.make
 libtorchplusplus.a: CMakeFiles/torchplusplus.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/cheencheen/Desktop/torch++/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX static library libtorchplusplus.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/cheencheen/Desktop/torch++/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX static library libtorchplusplus.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/torchplusplus.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/torchplusplus.dir/link.txt --verbose=$(VERBOSE)
 

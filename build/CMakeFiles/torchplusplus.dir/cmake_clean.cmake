@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/torchplusplus.dir/src/chess/board.cpp.o"
+  "CMakeFiles/torchplusplus.dir/src/chess/board.cpp.o.d"
   "CMakeFiles/torchplusplus.dir/src/nn/linear.cpp.o"
   "CMakeFiles/torchplusplus.dir/src/nn/linear.cpp.o.d"
   "CMakeFiles/torchplusplus.dir/src/ops/basic_ops.cpp.o"

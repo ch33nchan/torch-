@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/Users/cheencheen/Desktop/torch++/src/chess/board.cpp" "CMakeFiles/torchplusplus.dir/src/chess/board.cpp.o" "gcc" "CMakeFiles/torchplusplus.dir/src/chess/board.cpp.o.d"
   "/Users/cheencheen/Desktop/torch++/src/nn/linear.cpp" "CMakeFiles/torchplusplus.dir/src/nn/linear.cpp.o" "gcc" "CMakeFiles/torchplusplus.dir/src/nn/linear.cpp.o.d"
   "/Users/cheencheen/Desktop/torch++/src/ops/basic_ops.cpp" "CMakeFiles/torchplusplus.dir/src/ops/basic_ops.cpp.o" "gcc" "CMakeFiles/torchplusplus.dir/src/ops/basic_ops.cpp.o.d"
   "/Users/cheencheen/Desktop/torch++/src/tensor.cpp" "CMakeFiles/torchplusplus.dir/src/tensor.cpp.o" "gcc" "CMakeFiles/torchplusplus.dir/src/tensor.cpp.o.d"

@@ -172,6 +172,20 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+tests/CMakeFiles/test_basic.dir/rule:
+	cd /Users/cheencheen/Desktop/torch++/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_basic.dir/rule
+.PHONY : tests/CMakeFiles/test_basic.dir/rule
+
+# Convenience name for target.
+test_basic: tests/CMakeFiles/test_basic.dir/rule
+.PHONY : test_basic
+
+# fast build rule for target.
+test_basic/fast:
+	cd /Users/cheencheen/Desktop/torch++/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_basic.dir/build.make tests/CMakeFiles/test_basic.dir/build
+.PHONY : test_basic/fast
+
+# Convenience name for target.
 tests/CMakeFiles/test_tensor.dir/rule:
 	cd /Users/cheencheen/Desktop/torch++/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_tensor.dir/rule
 .PHONY : tests/CMakeFiles/test_tensor.dir/rule
@@ -212,6 +226,30 @@ test_ops: tests/CMakeFiles/test_ops.dir/rule
 test_ops/fast:
 	cd /Users/cheencheen/Desktop/torch++/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_ops.dir/build.make tests/CMakeFiles/test_ops.dir/build
 .PHONY : test_ops/fast
+
+test_basic.o: test_basic.cpp.o
+.PHONY : test_basic.o
+
+# target to build an object file
+test_basic.cpp.o:
+	cd /Users/cheencheen/Desktop/torch++/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_basic.dir/build.make tests/CMakeFiles/test_basic.dir/test_basic.cpp.o
+.PHONY : test_basic.cpp.o
+
+test_basic.i: test_basic.cpp.i
+.PHONY : test_basic.i
+
+# target to preprocess a source file
+test_basic.cpp.i:
+	cd /Users/cheencheen/Desktop/torch++/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_basic.dir/build.make tests/CMakeFiles/test_basic.dir/test_basic.cpp.i
+.PHONY : test_basic.cpp.i
+
+test_basic.s: test_basic.cpp.s
+.PHONY : test_basic.s
+
+# target to generate assembly for a file
+test_basic.cpp.s:
+	cd /Users/cheencheen/Desktop/torch++/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_basic.dir/build.make tests/CMakeFiles/test_basic.dir/test_basic.cpp.s
+.PHONY : test_basic.cpp.s
 
 test_linear.o: test_linear.cpp.o
 .PHONY : test_linear.o
@@ -298,9 +336,13 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... test"
+	@echo "... test_basic"
 	@echo "... test_linear"
 	@echo "... test_ops"
 	@echo "... test_tensor"
+	@echo "... test_basic.o"
+	@echo "... test_basic.i"
+	@echo "... test_basic.s"
 	@echo "... test_linear.o"
 	@echo "... test_linear.i"
 	@echo "... test_linear.s"
